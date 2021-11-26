@@ -1,6 +1,6 @@
 from app import application
 from flask import Flask, render_template, request
-from forms import FeatureInput
+from app.forms import FeatureInput
 
 # app = Flask(__name__)
 # app.config['SECRET_KEY'] = 'lucky8'
