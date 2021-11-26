@@ -2,9 +2,6 @@ from app import application
 from flask import Flask, render_template, request
 from app.forms import FeatureInput
 
-# app = Flask(__name__)
-# app.config['SECRET_KEY'] = 'lucky8'
-
 @application.route("/", methods = ["POST", "GET"])
 def home():
     beta_values = [52.73979899, -0.00207458, -6.91533959, 0.11199107, -0.8223395, 4.06842093, -0.83646151, 2.93171969]
