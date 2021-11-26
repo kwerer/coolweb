@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Home
+Page{% endblock %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="mycool" id="ok">
+      <h2>Enter your feature values here</h2>
+      <form action="" method="post">
+        <p>
+          {{form.New_Cases_Smoothed_Per_Million.label}}
+          <br />
+          {{form.New_Cases_Smoothed_Per_Million(size=10)}}
+        </p>
+        <p>
+          {{form.Total_Cases_Per_Million.label}}
+          <br />
+          {{form.Total_Cases_Per_Million(size=10)}}
+        </p>
+        <p>
+          {{form.New_Deaths_Smoothed_Per_Million.label}}
+          <br />
+          {{form.New_Deaths_Smoothed_Per_Million(size=10)}}
+        </p>
+        <p>
+          {{form.Reproduction_Rate.label}} <br />
+          {{form.Reproduction_Rate(size=10)}}
+        </p>
+        <p>
+          {{form.New_Tests_Smoothed_Per_Thousand.label}}
+          <br />
+          {{form.New_Tests_Smoothed_Per_Thousand(size=10)}}
+        </p>
+        <p>
+          {{form.People_Fully_Vaccinated_Per_Hundred.label}}
+          <br />
+          {{form.People_Fully_Vaccinated_Per_Hundred(size=10)}}
+        </p>
+        <p>
+          {{form.Positive_Rate.label}} <br />
+          {{form.Positive_Rate(size=10)}}
+        </p>
+
+        <p>{{form.submit()}}</p>
+      </form>
+    </div>
+  </body>
+</html>
+
+{% endblock %}
